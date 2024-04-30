@@ -1,0 +1,28 @@
+# Reading and Writing a file 
+
+f = open(__file__, 'r+') 
+
+lines = f.read() 
+f.write(lines) 
+f.close() 
+# Writing and Reading a file 
+
+f = open(__file__, 'w+') 
+
+lines = f.read() 
+f.write(lines) 
+f.close() 
+# Appending a file 
+
+f = open(__file__, 'a') 
+
+lines = 'Welcome '
+f.write(lines) 
+f.close() 
+# Appending and reading a file 
+
+f = open(__file__, 'a+') 
+
+lines = f.read() 
+f.write(lines) 
+f.close()
