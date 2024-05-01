@@ -1,0 +1,18 @@
+import pickle
+
+athletes_file = open("athletes.txt", "rb")
+athletes = pickle.load(athletes_file)
+athletes_file.close()
+print(athletes)
+
+#example 2 
+import pickle
+import pandas as pd
+
+athletes = {
+    "Name": ["Cristiano Ronaldo", "Lionel Messi", "Eden Hazard", "Luis Suarez", "Neymar"],        
+    "Club": ["Manchester United", "PSG", "Real Madrid", "Atletico Madrid", "PSG"]
+}
+
+df = pd.DataFrame(athletes)
+print(df)
